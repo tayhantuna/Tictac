@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplayer Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Multiplayer Tic-Tac-Toe</h1>
+        <div id="room-selection">
+            <input type="text" id="roomInput" placeholder="Enter Room Name">
+            <button id="joinRoomBtn">Join Room</button>
+        </div>
+        <div id="board" class="hidden">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <button id="resetBtn" class="hidden">Reset</button>
+        <p id="message"></p>
+        <div id="chat" class="hidden">
+            <div id="chatMessages"></div>
+            <input type="text" id="chatInput" placeholder="Type a message">
+            <button id="sendChatBtn">Send</button>
+        </div>
+        <div id="settings" class="hidden">
+            <h2>Settings</h2>
+            <input type="text" id="newDisplayName" placeholder="Enter new display name">
+            <input type="file" id="newProfileImage" accept="image/*">
+            <button id="updateSettingsBtn">Update</button>
+        </div>
+        <input type="text" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <input type="text" id="displayName" placeholder="Display Name">
+        <input type="file" id="profileImage" accept="image/*">
+        <button id="signUpBtn">Sign Up</button>
+        <button id="signInBtn">Sign In</button>
+        <button id="signOutBtn">Sign Out</button>
+    </div>
+</body>
+</html>
